@@ -1,0 +1,69 @@
+<!------------------------------------------------
+Shambhuraj Wadghule
+Honors Contract
+File: to-do.css
+Purpose: Provide html for the To Do List web page.
+ ------------------------------------------------>
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Title of the web page -->
+<title>To Do List</title>
+
+<!-- CSS files -->
+<link rel="stylesheet" href="jquery-ui.css">
+<link rel="stylesheet" href="to-do.css">
+
+<!-- javascript files -->
+<script src="jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script src="to-do.js"></script>
+
+
+</head><!-- Head Tag Open -->
+<body><!-- Body Tag Open -->
+
+  <!-- div container to contain all content of the to do list -->
+	<div id="container">
+		<h2>To Do List</h2>
+    <!-- Button to add a new tab -->
+		<button id="buttonAddTab">Add Tab</button>
+
+    <div id="tab">
+
+      <ul id="all">
+				<li><a href="#personal">Personal</a><span class="ui-icon ui-icon-close"></span></li>
+				<li><a href="#work">Work</a><span class="ui-icon ui-icon-close"></span></li>
+			</ul>
+
+        <!-- Ordered List for 'Personal' Tasks -->
+			<ol id="personal">
+				<li><input type="checkbox">Add Task</li>
+			</ol>
+
+      <!-- Ordered List for 'Work' Tasks -->
+			<ol id="work">
+				<li><input type="checkbox">Add Task</li>
+			</ol>
+
+		</div>
+    <!-- Button to add a new task -->
+		<button id="buttonAddTask">Add Task</button>
+
+    <!-- Div for adding a tab  -->
+		<div id="project-dialog" title="Add a tab" style="display:none;">
+			<label for="new-project">Project name:</label><input id="new-project" type="text" />
+		</div>
+
+		<div id="task-dialog" title="Add a task" style="display:none;">
+			<label for="new-task">Task name:</label><input id="new-task" type="text" />
+		</div>
+
+	</div>
+
+
+</body> <!-- body tag close -->
+</html> <!-- html tag close -->

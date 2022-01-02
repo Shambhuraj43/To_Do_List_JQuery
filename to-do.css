@@ -1,0 +1,88 @@
+/**************************************************
+Shambhuraj Wadghule
+Honors Contract
+File: to-do.html
+Purpose: Provide CSS for the To Do List web page.
+***************************************************/
+
+
+/* Body CSS */
+
+body {
+ background-image: url("background-image.jpg");
+ background-color: #cccccc;
+}
+
+/* Container CSS */
+#container
+{
+  width:700px;
+  height:450px;
+  margin:80px auto;
+  border:5px solid #FFFFFF;
+  border-radius: 35px;
+}
+
+/* Headline CSS */
+h2{
+  /* border-style: groove; */
+  color:rgb(130, 23, 9);
+  text-align: center;
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 3em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+
+
+/* Projects CSS */
+#projects
+{
+  width: 650px;
+  height:250px;
+  margin:0px auto;
+}
+
+/* Ordered List CSS */
+ol li{
+  border:1px dotted black;
+  cursor:pointer;
+  padding:5px;
+  margin-bottom:5px;
+}
+/* Ordered List Hover CSS */
+ol li:hover{
+  background: #6f736b;
+}
+
+/* Button Add Project CSS */
+#buttonAddProject
+{
+  margin-left: 540px;
+  margin-bottom: 20px;
+}
+
+/* Button Add Task CSS */
+#buttonAddTask
+{
+  margin-left: 550px;
+  margin-top: 20px;
+}
+
+/* Close Icon CSS */
+.ui-icon-close
+{
+  /* color: white; */
+  background-color: red;
+  /* transform: scale(2); */
+  cursor: pointer;
+}
